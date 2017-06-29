@@ -1,0 +1,10 @@
+{application, erldis, [
+	{description, "Erlang Redis application"},
+	{vsn, "0.4"},
+	{registered, [erldis_sup]},
+	{mod, {erldis_app, []}},
+	{applications, [kernel, stdlib]},
+	{modules, [
+	]},
+	{env, [{host, "localhost"}, {port, 6379}, {timeout, 500}]}
+]}.
