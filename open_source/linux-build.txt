@@ -1,0 +1,39 @@
+﻿1: ACE_wrappers
+./build.sh
+
+2: ffmpeg-2.6.1
+apt-get install libspeex-dev
+apt-get install libx264-dev
+./configure --enable-libspeex --enable-libx264 --enable-gpl
+make -j8
+
+3: glog
+./configure
+make -j8
+
+4: google-breakpad
+./configure
+make -j8
+
+5: hiredis
+make
+rm -rf libhiredis.so
+
+6: mysql
+apt-get install libmysqlclient-dev -y
+
+
+7: protobuf-2.6.1
+apt-get install autoconf automake libtool
+chmod 755 autogen.sh
+./autogen.sh
+./configure
+make -j8
+
+8：openssl
+apt-get install openssl
+apt-get install libssl-dev
+
+9. faac
+./configure
+make -j8
