@@ -1,0 +1,2 @@
+export ACE_ROOT=$(pwd)
+export LD_LIBRARY_PATH=$ACE_ROOT/lib:$LD_LIBRARY_PATH
